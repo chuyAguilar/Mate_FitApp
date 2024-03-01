@@ -11,8 +11,8 @@ export const getProduct = (req,res) => {
 
 export const createProducts = async (req,res) => {
 
-    const {nombre,cantidad,unidadMedida, pasos, imgURL} = req.body;
-    const newPlatillo = new Platillo({nombre,cantidad,unidadMedida, pasos, imgURL});
+    const {nombre,cantidad,ingredientes, pasos, imgURL} = req.body;
+    const newPlatillo = new Platillo({nombre,cantidad,ingredientes, pasos, imgURL});
     const platilloSave = await newPlatillo.save();
 
     res.status(201).json(platilloSave);
