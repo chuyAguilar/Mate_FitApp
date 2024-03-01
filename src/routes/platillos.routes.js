@@ -7,15 +7,15 @@ export default router;
 import * as platillosCTRL from '../controllers/platillos.controller';
 
 //ruta para traertodos los platillos
-router.get('/',platillosCTRL.getProducts );
+router.get('/',platillosCTRL.getPlatillos );
 //ruta para crear platillo
-router.post('/',platillosCTRL.createProducts );
+router.post('/',platillosCTRL.createPlatillo );
 //ruta para obtener un platillo por id
-router.get('/:platilloId',platillosCTRL.getProduct );
+router.get('/:platilloId',platillosCTRL.getPlatillo );
 //ruta para actualizar latillo con su id
-router.put('/:platilloId',platillosCTRL.updateProduct );
+router.put('/:platilloId', platillosCTRL.updatePlatillo);
 //ruta para eliminar platillo
-router.delete('/:platilloId',platillosCTRL.deleteProduct );
+router.delete('/:platilloId',platillosCTRL.deletePlatillo );
 
 
 
