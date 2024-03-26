@@ -19,7 +19,7 @@ app.use(express.json());
 
 //Ruta main
 app.get("/",(req,res)=> {
-    res.send('Fit App by chuy/ninis');
+    res.send(' Welcome to Meal Master');
 });
 
 //Ruta para platillos
